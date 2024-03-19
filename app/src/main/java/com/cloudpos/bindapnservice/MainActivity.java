@@ -8,6 +8,8 @@ import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.wizarpos.wizarviewagentassistant.aidl.IAPNManagerService;
 
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         bindApn();
+        Toast.makeText(this, "IAPNManagerService  bind success.", Toast.LENGTH_SHORT).show();
     }
 
     public void bindApn() {
@@ -33,9 +36,11 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onServiceConnected(ComponentName name, IBinder service) {
-                IAPNManagerService apnManagerService = IAPNManagerService.Stub.asInterface(service);
                 try {
+                    IAPNManagerService apnManagerService = IAPNManagerService.Stub.asInterface(service);
                     Log.d("IAPNManagerService","IAPNManagerService  bind success.");
+                    TextView view = (TextView) findViewById(R.id.text1);
+                    view.setText("IAPNManagerService  bind success.");
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
