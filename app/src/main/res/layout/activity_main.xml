@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/detail"
-    android:baselineAligned="false"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal" >
+    android:baselineAligned="false"
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,14 +14,14 @@
         android:background="#FFAAAAAA"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="5dp" >
+        android:padding="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:background="#FFAAAAAA"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <!--            <TextView-->
             <!--                android:layout_width="match_parent"-->
@@ -36,72 +35,79 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/bg_textview_shape"
                 android:gravity="center"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <Button
                     android:id="@+id/getSelected"
                     android:layout_width="115dp"
                     android:layout_height="60dp"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
                     android:background="@drawable/button_selector"
                     android:text="GetSelected"
+                    android:textAllCaps="false"
                     android:textSize="14sp" />
 
                 <Button
                     android:id="@+id/setSelected"
                     android:layout_width="115dp"
                     android:layout_height="60dp"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
                     android:background="@drawable/button_selector"
                     android:text="SetSelected"
+                    android:textAllCaps="false"
                     android:textSize="14sp" />
 
                 <Button
                     android:id="@+id/addByAllArgs"
                     android:layout_width="115dp"
                     android:layout_height="60dp"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
                     android:background="@drawable/button_selector"
                     android:text="AddByAllArgs"
+                    android:textAllCaps="false"
                     android:textSize="14sp" />
 
                 <Button
                     android:id="@+id/add"
                     android:layout_width="115dp"
                     android:layout_height="60dp"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
                     android:background="@drawable/button_selector"
                     android:text="Add"
+                    android:textAllCaps="false"
                     android:textSize="14sp" />
 
                 <Button
                     android:id="@+id/addByMCCAndMNC"
                     android:layout_width="115dp"
                     android:layout_height="60dp"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
                     android:background="@drawable/button_selector"
                     android:text="AddByMCCAndMNC"
+                    android:textAllCaps="false"
                     android:textSize="14sp" />
 
                 <Button
                     android:id="@+id/clear"
                     android:layout_width="115dp"
                     android:layout_height="60dp"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
                     android:background="@drawable/button_selector"
                     android:text="Clear"
+                    android:textAllCaps="false"
                     android:textSize="14sp" />
 
             </LinearLayout>
@@ -115,14 +121,14 @@
         android:background="#FFAAAAAA"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="5dp" >
+        android:padding="5dp">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <!--                <TextView-->
             <!--                    android:layout_width="0dp"-->
@@ -140,28 +146,28 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1.0"
-                android:textSize="18sp"
                 android:background="@drawable/button_selector"
-                android:text="@string/settings" />
+                android:text="@string/settings"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
-            >
+            android:layout_marginTop="5dp">
 
             <TextView
                 android:id="@+id/text_result"
-                android:textSize="17.6sp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_textview_shape"
+                android:gravity="top"
                 android:hint="@string/logcat_output"
                 android:maxLines="50"
+                android:paddingHorizontal="@dimen/textview_horizontal_margin"
                 android:scrollbars="vertical"
-                android:gravity="top"
-                android:paddingHorizontal="@dimen/textview_horizontal_margin"/>
+                android:textSize="17.6sp" />
         </LinearLayout>
 
 
