@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">BindApnService</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="logcat_output">logcat output</string>
+    <string name="logcat_clear">logcat clear</string>
+    <string name="interval_format_error">The format of interval-time is error!</string>
+    <string name="introduction">Introduction\n initialization configuration And Scan</string>
+
+    <string name="autotest_run3">getNetworkModeArray</string>
+    <string name="autotest_run4">getCurrentNetworkMode</string>
+    <string name="autotest_run5">testAll</string>
+    <string name="autotest_run6">Test4</string>
+
+    <string name="settings">Clear Logs</string>
 </resources>
