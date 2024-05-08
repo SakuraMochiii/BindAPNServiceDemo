@@ -23,7 +23,7 @@ public abstract class AbstractActivity extends Activity{
 			mHandler.sendMessage(msg);
 		}
 	}
-
+	
 	public static void writerInSuccessLog(String obj){
 		Logger.debug(obj);
 		writerInLog(obj, R.id.log_success);
